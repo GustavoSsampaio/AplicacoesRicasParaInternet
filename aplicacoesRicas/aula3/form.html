@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Dados</legend>
+            <label for="nome">Nome</label>
+            <br>
+            <input type="text" id="nome" name="nome"></input>
+            <br>
+            <br>
+            <label for="Sobrenome">Sobrenome</label>
+            <br>
+            <input type="text" id="Sobrenome" name="Sobrenome"></input>
+            <br>
+            <br>
+            <label for="CPF">CPF</label><br>
+            <input type="number" id="CPF" name="CPF" pattern="\d{3}\.\d{3}\.\d{3}\-\d{2}"></input>
+            <br>
+            <br>
+            <label for="NumDep">Número de Dependentes</label><br>
+            <input type="number" id="NumDep" name="NumDep"></input>
+            <br>
+            <br>
+            <label for="Email">Email</label><br>
+            <input type="text" id="Email" name="Email"></input>
+            <br>
+            <br>
+            <label for="DtNac">Data de Nacimento</label><br>
+            <input type="date" id="DtNac" name="DtNac"></input>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="dragindrop.css" rel="stylesheet">
+</head>
+<body>
+    <p>Arraste a imagem para dentro do retangulo que voce quiser:</p>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="drag1" src="https://steamuserimages-a.akamaihd.net/ugc/285225308508782583/ACF1F2CCC07EF721673F913C9848ECD84D147E4F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" data-peso="20" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)"
+    width="330" height="70">
+    </div>
+    <br>
+    <br>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <br>
+
+    <p>o peso total de sua compra é: <span id="pesoTotal">0 Kg</span></p>
+</body>
+    <script src="dragindrop.js"></script>
+</html>
