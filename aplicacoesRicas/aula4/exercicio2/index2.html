@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../index.css" rel="stylesheet">
+    <title>Sexo WebStorage</title>
+</head>
+<body>
+    <header>
+        <h1>Web Storage</h1>
+    </header>
+    <main>
+        <script>
+
+            if(sessionStorage.visitas){
+                sessionStorage.visitas = Number(sessionStorage.visitas)+1;
+            }else{
+                sessionStorage.setItem("visitas", 1);
+            };
+
+            document.write("<br><h2>Temos "+sessionStorage.visitas+" visitas! :)</h2>")
+        </script>
+    </main>
+</body>
+</html>
