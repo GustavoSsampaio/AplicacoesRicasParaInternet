@@ -1,0 +1,11 @@
+#fconf{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    display: none;
+}
+ /* oculta o form, ou seja, ele só vai aparecer quando clicar no botão opções*/
+
