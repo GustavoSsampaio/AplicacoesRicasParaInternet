@@ -5,10 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
 <body>
-    <div>
-        
+    <div class="row">
+        <video  class="col-12" id="myVideo" src="itens/rx7Video.mp4" width="600px" height="400px"poster="itens/rx7.jpg"></video>
+        <div class="btn btn-group m-auto col-5">
+        <button class="btn btn-success col-1" onclick="playVideo(document.getElementById('myVideo'))">Play</button>
+        <button class="btn btn-success col-1" onclick="pauseVideo(document.getElementById('myVideo'))">pause</button>
+        <button class="btn btn-success col-1" onclick="retrocederVideo(document.getElementById('myVideo'))">retroceder</button>
+        <button class="btn btn-success col-1" onclick="avancarVideo(document.getElementById('myVideo'))">avancar</button>
+        <button class="btn btn-success col-1" onclick="telaCheia(document.getElementById('myVideo'))">tela Cheia</button>
     </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
