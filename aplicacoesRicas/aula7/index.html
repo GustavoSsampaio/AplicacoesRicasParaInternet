@@ -1,0 +1,34 @@
+<!--
+    WEB WORKER
+
+    funciona assim como as thread do java realizando multitarefas, só que de forma ordenada para melhor desenpenho.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Worker</title>
+</head>
+<body>
+    <main>
+
+        <h1>Calcule sua média!</h1>
+
+        <input type="number" id="inputNumber1" placeholder="Digite um número!">
+        <button onclick="calcularQuadrado()">Calcular a média</button>
+        <p id="resultado1"></p>
+
+        <hr>
+
+        <h1>Calcule seu fatorial</h1>
+
+        <input type="number" id="inputNumber2" placeholder="Digite um numero">
+        <button onclick="calcularFatorial()">Calcular Fatorial</button>
+        <p id="resultado2"></p>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
