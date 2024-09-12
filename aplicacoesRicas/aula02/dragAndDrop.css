@@ -1,0 +1,26 @@
+#div1{
+    background-color: rgb(127, 195, 255);
+    border: 7px solid black;
+    width: 350px;
+    height: 70px;
+    margin: 5px;
+    margin-top: 15px;
+    margin-left: 45px;
+    float: left;
+    display: flex 1;
+}
+#div2{
+    border: 7px solid black;
+    width: 1700px;
+    height: 120px;
+    display: block;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+#drag1{
+    display: flex;
+    display: block;
+    margin: auto;
+}

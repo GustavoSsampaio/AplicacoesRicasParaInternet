@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dragAndDrop.css" rel="stylesheet">
+    <title>kamban</title>
+    <script>
+        function allowDrop(ev){
+            ev.preventDefault()
+        };
+        function drag(ev){
+            ev.dataTransfer.setData("text",ev.target.id);
+        };
+        function drop(ev){
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        };
+    </script>
+</head>
+<body>
+    <div id="div3">
+        <div id="div2">
+            <h1>fazer</h1>
+            <hr color="rgb(0, 141, 197)">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <textarea id="drag1"  draggable="true" ondragstart="drag(event)"width="336" height="69"></textarea>
+            </div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <textarea id="drag2"  draggable="true" ondragstart="drag(event)"width="336" height="69"></textarea>
+            </div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <textarea id="drag3"  draggable="true" ondragstart="drag(event)"width="336" height="69"></textarea>
+            </div>
+        </div>
+        <div id="div2">
+            <h1>fazendo</h1>
+            <hr color="rgb(0, 141, 197)">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+        <div id="div2">
+            <h1>feito</h1>
+            <hr color="rgb(0, 141, 197)">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
